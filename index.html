@@ -465,7 +465,7 @@
           <div class="modal-field">
             <label class="modal-label" for="user-name">Имя</label>
             <div class="modal-input-wrap">
-              <input class="modal-input" type="text" name="user-name" id="user-name" required />
+              <input class="modal-input" type="text" name="user-name" id="user-name" />
               <svg class="input-svg" width="18" height="18 ">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
@@ -475,7 +475,7 @@
           <div class="modal-field">
             <label class="modal-label" for="user-tel">Телефон</label>
             <div class="modal-input-wrap">
-              <input class="modal-input" type="tel" name="user-tel" id="user-tel" required />
+              <input class="modal-input" type="tel" name="user-tel" id="user-tel" />
               <svg class="input-svg" width="18" height="18 ">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
@@ -485,7 +485,7 @@
           <div class="modal-field">
             <label class="modal-label" for="user-email">Почта</label>
             <div class="modal-input-wrap">
-              <input class="modal-input" type="email" name="user-email" id="user-email" required />
+              <input class="modal-input" type="email" name="user-email" id="user-email" />
               <svg class="input-svg" width="18" height="18 ">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
@@ -502,20 +502,12 @@
             ></textarea>
           </div>
 
-          <div class="modal-field">
-            <label class="check-text" for="input-check"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="" class="contract-link"> Условия договора</a></label
-            >
-
-            <input
-              class="input-check visually-hidden"
-              type="checkbox"
-              id="input-check"
-              name="consensus"
-              value="consensus"
-            />
-          </div>
+          <label class="form-chek">
+            <input class="input-check" type="checkbox" name="consensus" />
+            <span class="icon-blank"></span>
+            <span class="check-text"> Соглашаюсь с рассылкой и принимаю&nbsp;</span>
+            <a href="" class="contract-link">Условия договора</a>
+          </label>
           <button type="submit" class="send-btn">Отправить</button>
         </form>
       </div>
